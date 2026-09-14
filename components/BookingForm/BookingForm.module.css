@@ -1,0 +1,137 @@
+.formContainer {
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.formGroupWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background-color: var(--inputs);
+  border: none;
+  outline: none;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--main);
+  resize: none;
+  display: block;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gray);
+}
+
+.inputError {
+  background-color: var(--error-light);
+  border: 1px solid var(--error);
+}
+
+.errorText {
+  position: absolute;
+  left: 13px;
+  top: -10px;
+  padding: 0 8px;
+  border-radius: 8px;
+  background-color: var(--error-light);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+
+}
+
+.errorIcon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: var(--error)
+}
+
+.errorIconTextarea {
+  position: absolute;
+  top: 34px;
+  right: 14px;
+  fill: var(--error)
+}
+
+.error {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+
+.button {
+  width: 100%;
+  padding: 12px 99px;
+  border-radius: 12px;
+  background-color: var(--light-blue);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  border: none;
+  transition: background-color var(--transition);
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+}

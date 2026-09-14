@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--badges);
+}
+
+.container {
+  max-width: 1440px;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigationItem {
+  display: flex;
+  align-items: center;
+}
+
+.navigationLink {
+  color: var(--main);
+  font-weight: 500;
+  line-height: 20px;
+  padding: 24px 0;
+}
+
+.navigationLink.active {
+  color: var(--light-blue);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}

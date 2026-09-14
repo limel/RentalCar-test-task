@@ -1,0 +1,58 @@
+.section {
+  padding: 84px 0 104px;
+}
+
+.container {
+  max-width: 1440px;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carListContainer {
+  position: relative;
+  width: 100%;
+}
+
+.message {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 12px 51px;
+  border-radius: 12px;
+  border: 1px solid var(--light-blue);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--main);
+  transition: border-color var(--transition);
+  margin-top: 48px;
+}
+
+.button:hover {
+  border-color: var(--dark-blue);
+}
+
+.loaderTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+
+.loaderDescription {
+  max-width: 321px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: var(--main);
+}

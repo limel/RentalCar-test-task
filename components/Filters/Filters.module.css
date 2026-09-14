@@ -1,0 +1,195 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 60px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--gray);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.dropdownInputWrap {
+  position: relative;
+}
+
+.input {
+  background-color: var(--white);
+  border: none;
+  outline: none;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--main);
+}
+
+input::placeholder {
+  color: var(--main);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdownInputBrand {
+  width: 204px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.dropdownInputPrice {
+  width: 196px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.dropdownWrapper {
+  position: absolute;
+  width: 100%;
+  padding: 14px 8px 14px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--white, #FFF);
+  background-color: var(--white, #FFF);
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+  margin-top: 4px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.dropdownWrapperBrand {
+  height: 270px;
+}
+
+.dropdownWrapperPrice {
+  height: 186px;
+}
+
+.dropdown {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background: var(--light-gray);
+  border-radius: 10px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+  background: var(--light-gray);
+}
+
+.dropdownItem {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gray)
+}
+
+.dropdownItemSelected {
+  color: var(--main);
+}
+
+.inputMinMileage {
+  width: 160px;
+  padding: 12px 24px;
+  border-radius: 12px 0 0 12px;
+  border-right: 1px solid var(--light-gray);
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.inputMaxMileage {
+  width: 160px;
+  padding: 12px 24px;
+  border-radius: 0 12px 12px 0;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.inputMinMileage::-webkit-outer-spin-button,
+.inputMinMileage::-webkit-inner-spin-button,
+.inputMaxMileage::-webkit-outer-spin-button,
+.inputMaxMileage::-webkit-inner-spin-button {
+  display: none;
+}
+
+.searchBtn {
+  width: 156px;
+  height: 44px;
+  padding: 12px 51px;
+  border-radius: 12px;
+  background-color: var(--light-blue);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  border: none;
+  display: block;
+  transition: background-color var(--transition);
+}
+
+.searchBtn:hover {
+  background-color: var(--dark-blue);
+}
+
+.clearBtn {
+  width: 156px;
+  padding: 0;
+  background-color: transparent;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gray);
+  border: none;
+  display: block;
+  transition: color var(--transition);
+}
+
+.clearBtn:hover {
+  color: var(--main);
+}

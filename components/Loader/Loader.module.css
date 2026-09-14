@@ -1,0 +1,41 @@
+.loaderWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.89);
+  z-index: 1;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 543px;
+  height: 288px;
+  border-radius: 16px;
+  padding: 48px 96px;
+  background-color: var(--white);
+}
+
+.loader {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  border: 6px solid #dee2e6;
+  border-top-color: var(--light-blue);
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 32px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,53 @@
+.section {
+  background-color: var(--light-gray);
+  padding: 436px 0 60px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(/banner.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1440px;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.catalogLink {
+  width: 276px;
+  padding: 12px 88px;
+  border-radius: 12px;
+  background-color: var(--light-blue);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  border: none;
+  transition: background-color var(--transition);
+}
+
+.catalogLink:hover {
+  background-color: var(--dark-blue);
+}

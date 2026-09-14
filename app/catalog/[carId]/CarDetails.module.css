@@ -1,0 +1,45 @@
+.section {
+  padding: 84px 0 176px;
+}
+
+.container {
+  max-width: 1440px;
+  padding-right: 120px;
+  padding-left: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 640px 1fr;
+  gap: 32px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 512px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--light-gray) -32.932px 0.004px / 119.906% 100% no-repeat;
+}
+
+.loaderTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+
+.loaderDescription {
+  max-width: 321px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: var(--main);
+}

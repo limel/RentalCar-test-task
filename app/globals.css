@@ -1,0 +1,53 @@
+:root {
+  --main: #101828;
+  --white: #FFFFFF;
+  --badges: #F2F4F7;
+  --bg: #F5F5F5;
+  --inputs: #F7F7F7;
+  --light-gray: #DADDE1;
+  --gray: #8D929A;
+  --light-blue: #00AAD4;
+  --dark-blue: #0095BA;
+  --error: #EC383B;
+  --error-light: #FFDFDF;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: var(--font-manrope), sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
